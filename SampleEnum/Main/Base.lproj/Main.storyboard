@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4KA-oD-cA8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="r81-34-gm1">
+            <objects>
+                <navigationController id="4KA-oD-cA8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xmy-mU-pJu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dGU-k4-Lzv" kind="relationship" relationship="rootViewController" id="WQ0-KX-huO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aqa-dI-EWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="273"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="20B-uA-oqz">
+            <objects>
+                <viewController id="dGU-k4-Lzv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t1a-GK-PRb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tu6-e6-fHx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNp-aU-UFI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="383"/>
+                                        <state key="normal" title="NoRefactoring"/>
+                                        <connections>
+                                            <segue destination="Gjg-Lw-y4s" kind="show" id="Tw9-H3-a18"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vev-CN-USO">
+                                        <rect key="frame" x="0.0" y="391" width="414" height="383"/>
+                                        <state key="normal" title="Refactoring"/>
+                                        <connections>
+                                            <segue destination="LbC-d7-n2n" kind="show" id="crW-nf-uTm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BL9-JL-CUE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BL9-JL-CUE" firstAttribute="bottom" secondItem="Tu6-e6-fHx" secondAttribute="bottom" id="3gf-mR-h1i"/>
+                            <constraint firstItem="Tu6-e6-fHx" firstAttribute="top" secondItem="BL9-JL-CUE" secondAttribute="top" id="C9a-70-2pf"/>
+                            <constraint firstItem="BL9-JL-CUE" firstAttribute="trailing" secondItem="Tu6-e6-fHx" secondAttribute="trailing" id="l4i-ur-IaL"/>
+                            <constraint firstItem="Tu6-e6-fHx" firstAttribute="leading" secondItem="BL9-JL-CUE" secondAttribute="leading" id="w72-44-Ulx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Syy-KB-xLu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Hj-nM-qaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="273"/>
+        </scene>
+        <!--NoRefactoring-->
+        <scene sceneID="Up6-mZ-xUp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NoRefactoring" id="Gjg-Lw-y4s" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bDe-m0-DdQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZ6-fO-rtN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="172"/>
+        </scene>
+        <!--Refactoring-->
+        <scene sceneID="iYM-kK-WQq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Refactoring" id="LbC-d7-n2n" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G3C-ke-pva"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGT-nP-vgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="379"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

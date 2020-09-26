@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B607E507251F378F00CC00C7 /* Refactoring.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B607E506251F378F00CC00C7 /* Refactoring.storyboard */; };
+		B607E50D251F37B500CC00C7 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607E50C251F37B500CC00C7 /* UIView+.swift */; };
 		B653219C251EF84200A67B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653219B251EF84200A67B60 /* AppDelegate.swift */; };
 		B653219E251EF84200A67B60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653219D251EF84200A67B60 /* SceneDelegate.swift */; };
-		B65321A0251EF84200A67B60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653219F251EF84200A67B60 /* ViewController.swift */; };
 		B65321A3251EF84200A67B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65321A1251EF84200A67B60 /* Main.storyboard */; };
 		B65321A5251EF84300A67B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65321A4251EF84300A67B60 /* Assets.xcassets */; };
 		B65321A8251EF84300A67B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65321A6251EF84300A67B60 /* LaunchScreen.storyboard */; };
 		B65321B3251EF84300A67B60 /* SampleEnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65321B2251EF84300A67B60 /* SampleEnumTests.swift */; };
 		B65321BE251EF84300A67B60 /* SampleEnumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65321BD251EF84300A67B60 /* SampleEnumUITests.swift */; };
+		B65321D0251EFA5800A67B60 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65321CF251EFA5800A67B60 /* CardView.swift */; };
+		B65321F1251F136200A67B60 /* NoRefactoring.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65321F0251F136200A67B60 /* NoRefactoring.storyboard */; };
+		B65321F6251F137000A67B60 /* NoRefactoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65321F5251F137000A67B60 /* NoRefactoringViewController.swift */; };
+		B653220A251F146F00A67B60 /* RefactoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6532209251F146F00A67B60 /* RefactoringViewController.swift */; };
+		B6532223251F35EE00A67B60 /* CardView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6532222251F35EE00A67B60 /* CardView2.swift */; };
+		B653222D251F363900A67B60 /* HumanModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653222C251F363900A67B60 /* HumanModel1.swift */; };
+		B6532232251F368700A67B60 /* HumanModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6532231251F368700A67B60 /* HumanModel2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B607E506251F378F00CC00C7 /* Refactoring.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Refactoring.storyboard; sourceTree = "<group>"; };
+		B607E50C251F37B500CC00C7 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		B6532198251EF84200A67B60 /* SampleEnum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleEnum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B653219B251EF84200A67B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B653219D251EF84200A67B60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B653219F251EF84200A67B60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B65321A2251EF84200A67B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B65321A4251EF84300A67B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65321A7251EF84300A67B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		B65321B9251EF84300A67B60 /* SampleEnumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleEnumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65321BD251EF84300A67B60 /* SampleEnumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEnumUITests.swift; sourceTree = "<group>"; };
 		B65321BF251EF84300A67B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65321CF251EFA5800A67B60 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B65321F0251F136200A67B60 /* NoRefactoring.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoRefactoring.storyboard; sourceTree = "<group>"; };
+		B65321F5251F137000A67B60 /* NoRefactoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRefactoringViewController.swift; sourceTree = "<group>"; };
+		B6532209251F146F00A67B60 /* RefactoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoringViewController.swift; sourceTree = "<group>"; };
+		B6532222251F35EE00A67B60 /* CardView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView2.swift; sourceTree = "<group>"; };
+		B653222C251F363900A67B60 /* HumanModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanModel1.swift; sourceTree = "<group>"; };
+		B6532231251F368700A67B60 /* HumanModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanModel2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B607E50B251F37A400CC00C7 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				B607E50C251F37B500CC00C7 /* UIView+.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		B653218F251EF84200A67B60 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +123,12 @@
 		B653219A251EF84200A67B60 /* SampleEnum */ = {
 			isa = PBXGroup;
 			children = (
+				B607E50B251F37A400CC00C7 /* extension */,
+				B65321FF251F139C00A67B60 /* Main */,
+				B653221F251F356000A67B60 /* Refactoring */,
+				B653221E251F355800A67B60 /* NoRefactoring */,
 				B653219B251EF84200A67B60 /* AppDelegate.swift */,
 				B653219D251EF84200A67B60 /* SceneDelegate.swift */,
-				B653219F251EF84200A67B60 /* ViewController.swift */,
-				B65321A1251EF84200A67B60 /* Main.storyboard */,
 				B65321A4251EF84300A67B60 /* Assets.xcassets */,
 				B65321A6251EF84300A67B60 /* LaunchScreen.storyboard */,
 				B65321A9251EF84300A67B60 /* Info.plist */,
@@ -126,6 +152,84 @@
 				B65321BF251EF84300A67B60 /* Info.plist */,
 			);
 			path = SampleEnumUITests;
+			sourceTree = "<group>";
+		};
+		B65321FD251F138800A67B60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B65321F0251F136200A67B60 /* NoRefactoring.storyboard */,
+				B65321F5251F137000A67B60 /* NoRefactoringViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B65321FE251F139000A67B60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B65321CF251EFA5800A67B60 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B65321FF251F139C00A67B60 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B65321A1251EF84200A67B60 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B653221E251F355800A67B60 /* NoRefactoring */ = {
+			isa = PBXGroup;
+			children = (
+				B653222B251F362C00A67B60 /* Model */,
+				B65321FD251F138800A67B60 /* Controller */,
+				B65321FE251F139000A67B60 /* View */,
+			);
+			path = NoRefactoring;
+			sourceTree = "<group>";
+		};
+		B653221F251F356000A67B60 /* Refactoring */ = {
+			isa = PBXGroup;
+			children = (
+				B653222A251F362600A67B60 /* Model */,
+				B6532221251F359600A67B60 /* View */,
+				B6532220251F357F00A67B60 /* Controller */,
+			);
+			path = Refactoring;
+			sourceTree = "<group>";
+		};
+		B6532220251F357F00A67B60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B607E506251F378F00CC00C7 /* Refactoring.storyboard */,
+				B6532209251F146F00A67B60 /* RefactoringViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6532221251F359600A67B60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6532222251F35EE00A67B60 /* CardView2.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B653222A251F362600A67B60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6532231251F368700A67B60 /* HumanModel2.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B653222B251F362C00A67B60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B653222C251F363900A67B60 /* HumanModel1.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +335,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B607E507251F378F00CC00C7 /* Refactoring.storyboard in Resources */,
+				B65321F1251F136200A67B60 /* NoRefactoring.storyboard in Resources */,
 				B65321A8251EF84300A67B60 /* LaunchScreen.storyboard in Resources */,
 				B65321A5251EF84300A67B60 /* Assets.xcassets in Resources */,
 				B65321A3251EF84200A67B60 /* Main.storyboard in Resources */,
@@ -258,8 +364,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65321A0251EF84200A67B60 /* ViewController.swift in Sources */,
+				B6532232251F368700A67B60 /* HumanModel2.swift in Sources */,
 				B653219C251EF84200A67B60 /* AppDelegate.swift in Sources */,
+				B6532223251F35EE00A67B60 /* CardView2.swift in Sources */,
+				B65321F6251F137000A67B60 /* NoRefactoringViewController.swift in Sources */,
+				B65321D0251EFA5800A67B60 /* CardView.swift in Sources */,
+				B653222D251F363900A67B60 /* HumanModel1.swift in Sources */,
+				B607E50D251F37B500CC00C7 /* UIView+.swift in Sources */,
+				B653220A251F146F00A67B60 /* RefactoringViewController.swift in Sources */,
 				B653219E251EF84200A67B60 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
